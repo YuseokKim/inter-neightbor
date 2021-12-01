@@ -1,0 +1,10 @@
+
+spring:
+  data:
+    mongodb:
+      host: 172.19.155.19
+      port: 27017
+      username: mtdev
+      password: abcde12#
+      database: ngp-web
+      authentication-database: admin
