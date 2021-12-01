@@ -38,7 +38,7 @@ public class OrderHandler {
                 .flatMap(order ->
                         ok()
                         .contentType(MediaType.APPLICATION_JSON)
-//                        .body(order, Order.class) 이렇게 하면 flatMap이 body세팅을 기다리지 않고 return하기 때문에 notEmpty 에러가 난다?
+//                        .body(order, Order.class) 이렇게 하면 flatMap이 body세팅을 기다리지 않고 return하기 때문에 notEmpty 에러?가 난다
                         .body(BodyInserters.fromValue(order))
                 );
     }
