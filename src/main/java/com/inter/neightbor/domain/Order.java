@@ -21,7 +21,6 @@ public class Order {
     private LocalDateTime createdDate = LocalDateTime.now();
     private boolean isDone;
     private String comment;
-    private Review review;
 
     public Order(OrderRequestDto orderRequestDto) {
         this.content = orderRequestDto.getContent();
